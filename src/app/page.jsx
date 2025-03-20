@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Form from "@/components/contact/form";
+import Form from "@/components/pages/contact/form";
 import Image_gsap from '@/components/image_gsap';
 
 export async function generateMetadata() {
@@ -32,7 +32,9 @@ export async function generateMetadata() {
   }
 };
 
-export default function Home() {
+export default async function Home() {
+  await new Promise((resolve) => setTimeout(resolve, 5000));
+
   return (
     <div className="flex lg:flex-row  ">
       <div className="flex items-center justify-center bg-primary w-14 ">
