@@ -49,8 +49,8 @@ export default function Form(){
     };
       return(
           <div className=" ">
-                      <form className=" w-full  flex flex-col gap-2 p-2 " onSubmit={sendEmail}>
-                        <h2 className="text-primary text-center  text-2xl lg:text-4xl font-bold uppercase font-serif">Let's get in touch</h2>
+                      <form className=" w-full  flex flex-col gap-4 p-2 " onSubmit={sendEmail}>
+                        <h2 className=" text-white lg:text-primary p-2  text-center  text-2xl lg:text-4xl font-bold uppercase font-serif">Let's get in touch</h2>
                           <div className=" flex flex-col lg:flex-row gap-4">
                               <div className=" w-full">
                                   <input value={formData.fullName} onChange={handleInputChange} type="text" name='fullName' className={` ${!formData.fullName && validation && "border-red-500 placeholder:text-red-500 "} bg-[#EFEFEF] h-12 w-full rounded-lg border-2 p-4 placeholder:capitalize placeholder:text-sm placeholder:font-medium   `} placeholder=' Your Name' />

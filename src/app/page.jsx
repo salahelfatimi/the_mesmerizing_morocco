@@ -35,8 +35,8 @@ export async function generateMetadata() {
 export default async function Home() {
 
   return (
-    <div className="flex lg:flex-row  h-screen">
-      <div className="flex items-center justify-center bg-primary w-14 ">
+    <div className="flex lg:flex-row  h-screen relative">
+      <div className="flex z-50 items-center justify-center bg-primary w-14 ">
         <h2 className="transform text-white uppercase rotate-90 text-2xl  font-bold whitespace-nowrap">
           We are launching soon
         </h2>
@@ -44,7 +44,11 @@ export default async function Home() {
       <div className="lg:w-1/3 hidden lg:block ">
         <Image_gsap/>
       </div>
-      <div className=" lg:w-2/3 flex flex-col container justify-center items-center w-full">
+      <div className='lg:hidden block absolute inset-0 bg-black z-30 opacity-70'></div>
+      <div className='lg:hidden block h-screen w-screen absolute z-0'>
+        <Image_gsap/>
+      </div>
+      <div className=" z-50 lg:w-2/3 flex flex-col container justify-center items-center w-full">
         <div>
           <div className="flex flex-col items-center">
             <Image src={'/img/logo_text.jpg'} width={500} height={500} className="w-28" alt="the mesmerizing morocco" title="the mesmerizing morocco" />
