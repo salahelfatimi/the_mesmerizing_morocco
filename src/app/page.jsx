@@ -35,7 +35,7 @@ export async function generateMetadata() {
 export default function Home() {
   return (
     <div className="flex lg:flex-row  ">
-      <div className="flex items-center justify-center bg-primary w-16 ">
+      <div className="flex items-center justify-center bg-primary w-14 ">
         <h2 className="transform text-white uppercase rotate-90 text-2xl font-bold whitespace-nowrap">
           We are launching soon
         </h2>
@@ -44,10 +44,12 @@ export default function Home() {
         <Image_gsap/>
       </div>
       <div className=" lg:w-2/3 flex flex-col container justify-center items-center w-full">
-        <div className="flex flex-col items-center">
-          <Image src={'/img/logo_text.jpg'} width={500} height={500} className="w-32" alt="the mesmerizing morocco" title="the mesmerizing morocco" />
+        <div>
+          <div className="flex flex-col items-center">
+            <Image src={'/img/logo_text.jpg'} width={500} height={500} className="w-28" alt="the mesmerizing morocco" title="the mesmerizing morocco" />
+          </div>
+          <h1 className=' opacity-0 h-0  uppercase font-bold text-lg text-primary '>the mesmerizing morocco</h1>
         </div>
-        <h1 className=' opacity-0 h-0  uppercase font-bold text-lg text-primary '>the mesmerizing morocco</h1>
         <div className=' w-full'>
           <Form />
         </div>
