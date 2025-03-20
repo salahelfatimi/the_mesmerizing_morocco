@@ -25,7 +25,7 @@ export default function ImageSlideshow() {
     return (
         <div className="relative w-full h-screen overflow-hidden">
             {images.map((img, index) => (
-               <Image key={index} src={img} width={1920} height={1080} quality={50} className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} alt="the mesmerizing morocco" title="the mesmerizing morocco" />
+               <Image key={index} src={img} width={1920} height={1080} quality={30} className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} alt="the mesmerizing morocco" title="the mesmerizing morocco" />
             ))}
         </div>
     );
