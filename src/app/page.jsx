@@ -32,8 +32,7 @@ export async function generateMetadata() {
   }
 };
 
-export default async function Home() {
-  await new Promise((resolve) => setTimeout(resolve, 5000));
+export default  function Home() {
 
   return (
     <div className="flex lg:flex-row  ">
